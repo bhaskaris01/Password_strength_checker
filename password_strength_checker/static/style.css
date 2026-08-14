@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #2a2a3d;
+  padding: 32px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#passwordInput {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 14px;
+}
+
+#passwordInput:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+#toggleBtn {
+  background: #444;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.strength-bar {
+  height: 8px;
+  background: #444;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-label {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.reason-text {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 16px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.checklist li {
+  padding: 4px 0;
+  color: #888;
+}
+
+.checklist li.passed {
+  color: #4caf50;
+}
